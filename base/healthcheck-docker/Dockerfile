@@ -11,7 +11,7 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-FROM gcr.io/kctf-docker/kctf-pwntools@sha256:9e2821935175b2e655da422b1232b685c0a6fb8a251d80b87cb2f518ecf5b63e AS pwntools
+FROM gcr.io/kctf-docker/kctf-pwntools@sha256:c5b4a642e687f302bd27e978f12a7c590ce66b025502b92edeeeac8f777454b9 AS pwntools
 FROM ubuntu:20.04
 
 RUN apt-get update && apt-get -yq --no-install-recommends install cpio openssl python3 && rm -rf /var/lib/apt/lists/*
